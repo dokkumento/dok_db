@@ -9,11 +9,11 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB;
 
 CREATE TABLE `projects` (
-	`id` INT unsigned NOT NULL AUTO_INCREMENT,
-	`projectId` VARCHAR(20) NOT NULL UNIQUE,
-	`user_id` INT unsigned,
-	`admins` VARCHAR(255),
-	`structure` VARCHAR(1000),
+  `id` INT unsigned NOT NULL AUTO_INCREMENT,
+  `projectId` VARCHAR(20) NOT NULL UNIQUE,
+  `user_id` INT unsigned,
+  `admins` VARCHAR(255),
+  `structure` VARCHAR(1000),
   FOREIGN KEY (`user_id`)
     REFERENCES users(`id`)
     ON DELETE CASCADE,

@@ -13,6 +13,7 @@ CREATE TABLE `projects` (
   `projectId` VARCHAR(20) NOT NULL UNIQUE,
   `user_id` INT unsigned,
   `admins` VARCHAR(255),
+  `title` VARCHAR(255) NOT NULL,
   `structure` VARCHAR(1000),
   FOREIGN KEY (`user_id`)
     REFERENCES users(`id`)

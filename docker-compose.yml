@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dokumento_sql_db:
+    image: mysql:latest
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=documents
+      - MYSQL_USER=docuser
+      - MYSQL_PASSWORD=document
+      - MYSQL_DATABASE=dokkumento

@@ -1,0 +1,24 @@
+{
+  "name": "dok_db",
+  "version": "1.0.0",
+  "description": "Main database and files for markdown files and users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docker-compose up",
+    "start-d": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "migrate": "echo 'TODO: setup migration'",
+    "seed": "echo 'TODO: setup seeder'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dokkumento/dok_db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dokkumento/dok_db/issues"
+  },
+  "homepage": "https://github.com/dokkumento/dok_db#readme"
+}
